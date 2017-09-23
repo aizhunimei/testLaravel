@@ -11,6 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+
+Route::get('/', 'CatsController@index');
+
+
+Route::get('/cats', 'CatsController@index');
+
+Route::get('/cats/{id}', 'CatsController@show');
+
+
+
+
+
+
