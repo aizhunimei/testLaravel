@@ -13,7 +13,7 @@
         <div class="row" >
         @foreach ($cats as $cat)
         <a class="card" href="/cats/{{ $cat->id }}" target="_blank">
-          <img src= <?php echo 'storage/cat/'.$cat->id.'/'.$cat->thumb; ?> alt= "alt">
+        <img src= {{ $cat->thumb }} alt= "alt">
           <p class="card-text"> {{ $cat->title }} </p>
         </a>
         @endforeach

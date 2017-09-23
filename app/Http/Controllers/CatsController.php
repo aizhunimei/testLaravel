@@ -19,8 +19,8 @@ class CatsController extends Controller {
 			return response()->view('errors.404');
 		}
 		$title = $cat->title;
-		$thumb = Storage::url('public/cat/'. $cat->id. '/'. $cat->thumb);
-		$url = Storage::url('public/cat/'. $cat->id. '/'. $cat->url);
+		$thumb = $cat->thumb;
+		$url = $cat->url;
 		return response()->view('cats.show', ['title' => $title, 'thumb' => $thumb, 'url' => $url]);
 	}
 

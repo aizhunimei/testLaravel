@@ -14,8 +14,6 @@
 			<source src= @php echo $url; @endphp type='video/mp4'>
 		</video>
 		</div>
-
-
 		<script src="http://vjs.zencdn.net/6.2.4/video.js"></script>
 	</div>
 @endsection
